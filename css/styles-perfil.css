@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="866" viewBox="0 0 1440 866" fill="none"><rect width="1440" height="866" fill="white"/><g clip-path="url(%23clip1_14_454)"><circle opacity="0.6" cx="1290" cy="166" r="203" fill="%23015958"/><circle opacity="0.6" cx="913" cy="548" r="84" fill="%231DB5BE"/><g filter="url(%23filter0_b_14_454)"><path d="M0 0H1440V572L0 752V0Z" fill="%23F2F7FF" fill-opacity="0.7"/></g><path d="M1260 594.005L1680 541.488V605.488L1260 658.005V594.005Z" fill="%23023535"/><path d="M828 584.808L1440 508V572L828 648.808V584.808Z" fill="%23008F8C"/><path d="M988 500.517L1408 448V512L988 564.517V500.517Z" fill="%23C7FFED"/><path d="M0 688.016L420 635.499V699.499L0 752.016V688.016Z" fill="%23023535"/><path d="M-152 771.005L268 718.488V782.488L-152 835.005V771.005Z" fill="%23C7FFED"/></g></svg>') no-repeat center center fixed;
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, nav, footer {
+    background: linear-gradient(to bottom, #4e739a, #0056b3); /* Gradiente azul */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+nav svg {
+    width: 22px;
+    height: 22px;
+    margin: -5px;
+    
+}
+
+nav a.active {
+    background-color: #59728c;
+}
+
+nav a:hover {
+    background-color: #49698a;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-details {
+    text-align: left;
+}
+
+.perfil-details p {
+    margin-bottom: 10px;
+}
+
+.perfil-details ul {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.perfil-details ul li {
+    list-style-type: none;
+}
+
+.perfil-details h3 {
+    margin-bottom: 10px;
+}
+
+.perfil-details a {
+    color: #687a8c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.perfil-details a:hover {
+    color: #3d5874;
+}
+
+footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    background-color: #015958;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+    box-shadow: 0 -2px 8px rgba(61, 61, 63, 0.973);
+}

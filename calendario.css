@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="866" viewBox="0 0 1440 866" fill="none"><rect width="1440" height="866" fill="white"/><g clip-path="url(%23clip1_14_454)"><circle opacity="0.6" cx="1290" cy="166" r="203" fill="%23015958"/><circle opacity="0.6" cx="913" cy="548" r="84" fill="%231DB5BE"/><g filter="url(%23filter0_b_14_454)"><path d="M0 0H1440V572L0 752V0Z" fill="%23F2F7FF" fill-opacity="0.7"/></g><path d="M1260 594.005L1680 541.488V605.488L1260 658.005V594.005Z" fill="%23023535"/><path d="M828 584.808L1440 508V572L828 648.808V584.808Z" fill="%23008F8C"/><path d="M988 500.517L1408 448V512L988 564.517V500.517Z" fill="%23C7FFED"/><path d="M0 688.016L420 635.499V699.499L0 752.016V688.016Z" fill="%23023535"/><path d="M-152 771.005L268 718.488V782.488L-152 835.005V771.005Z" fill="%23C7FFED"/></g></svg>') no-repeat center center fixed;
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:#C5C7C7;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    margin-left: auto; 
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    position: center;
+    margin-left: 15px;
+}
+nav svg {
+    width: 22px;
+    height: 22px;
+    margin: -5px;
+    
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav a.active {
+    background-color: #99ffff;
+}
+
+nav a:hover {
+    background-color:#ccffff;
+}
+
+.ff {
+    background-color: #023535; 
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0; 
+}
+
+footer {
+    margin-top: auto; 
+}
+main {
+    padding: 20px 0;
+}
+
+.inicio-section, .eventos-section, .talleres-section {
+    margin-bottom: 30px;
+}
+
+
+.calendar-container {
+    width: 90%;
+    max-width: 800px; /* Reducido el ancho máximo para una mejor visualización */
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+#month-year {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar-table th,
+#calendar-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+#calendar-table th {
+    background-color: #f2f2f2;
+}
+
+#calendar-table td {
+    border: 1px solid #ccc;
+}
+
+.task-input {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#task-text {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#add-task-btn {
+    background-color: #125c48;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#tasks-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#tasks-list .task-item {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.task-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.edit-btn, .delete-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.delete-btn {
+    color: #ff0000;
+}

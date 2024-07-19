@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGradebook</title>
+    <link rel="stylesheet" href="iniciosss.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <svg width="150" height="150" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.10959 200H71.9178C104.071 200 130.137 173.934 130.137 141.781H62.3288C30.1752 141.781 4.10959 167.846 4.10959 200Z" fill="#111827"/>
+            <path d="M4.10959 61.6437V147.26C36.2632 147.26 62.3288 121.195 62.3288 89.041V3.42456C30.1752 3.42456 4.10959 29.4902 4.10959 61.6437Z" fill="#111827"/>
+            <path d="M195.89 0H128.082C95.9287 0 69.863 26.0656 69.863 58.2192H137.671C169.825 58.2192 195.89 32.1536 195.89 0Z" fill="#111827"/>
+            <path d="M195.89 138.356V52.7397C163.737 52.7397 137.671 78.8054 137.671 110.959V196.575C169.825 196.575 195.89 170.51 195.89 138.356Z" fill="#111827"/>
+            </svg>
+            
+        <h1>Welcome to Landify</h1>
+        <p>organiza y visualiza tu historial academico de forma sencilla</p>
+    
+        <p>por favor seleccione su rol:</p>
+        <button onclick="checkStudentAccess()" class="btn">soy estudiante</button>
+        <button onclick="checkAccess()" class="btn">soy maestro</button>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p style="color: white; font-size: 15px;">&copy; 2024 Campus Digital - "Fundación especial: ayuda a los estudiantes con bajo intelecto donando".</p>
+        </div>
+    </footer>
+
+    <script>
+        function checkStudentAccess() {
+            var dni = prompt("Please enter your DNI:");
+            if (dni === "60961250") { 
+                window.location.href = "inicio.html";
+            } else {
+                alert("Access denied. Incorrect DNI.");
+            }
+        }
+
+        function checkAccess() {
+            var accessCode = prompt("Please enter the access code:");
+            if (accessCode === "240630") {
+                window.location.href = "star.html";
+            } else {
+                alert("Access denied. Incorrect access code.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
